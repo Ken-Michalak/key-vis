@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Key Signature Visualization Examples</title>
+
+		<script src="KeyVis.js"></script>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<style type="text/css">
+			canvas { border: 1px solid black; }
+		</style>
+	</head>
+	<body>
+		<p>crc (32 bits)</p>
+		<canvas width="100" height="100" data-key="SXH0Vg=="></canvas>
+		<canvas width="100" height="100" data-key="mMBPhw=="></canvas>
+		<canvas width="100" height="100" data-key="Mue6Iw=="></canvas><br/>
+		<p>md5 (128 bits)</p>
+		<canvas width="200" height="100" data-key="59980soH9PGrQV1Fem4cEw=="></canvas><br/>
+		<p>sha1 (160 bits)</p>
+		<canvas width="250" height="100" data-key="G+Fo/4N/BDveF8AxQ0HIQnEEezE="></canvas><br/>
+		<p>sha256 (256 bits)</p>
+		<canvas width="300" height="100" data-key="qIPa/EgNRm7gTg1tqYa9eOsf3SF40EaTcj2jqPldQvQ="></canvas><br/>
+		<p>sha512 (512 bits)</p>
+		<canvas width="400" height="100" data-key="eYVVg3Dw3oaoZOAFCv30XXApuHmLzXLN2/eBMp+ZOA4/Oxr9ymdl2J/DiLIT349qGTz8VtT/LvbgqZvYg6bZjA=="></canvas><br/>
+
+		<p>Equifax ssl ca (1024 bits)</p>
+		<canvas width="800" height="100" data-key="wV2xWGcIYu6gmi0fCG2RFGiYCh7+2gRvE4RiIcPRfM6fBeC4AfBONOziipUEZKzxa1NfBbPLZ4C/QgKO/t0BCezhABRP/PvwDN1Dulsr4R+AcJkVV5MW8Q+XarfCaCMczE1ZMKxRHjuvK9buY0V7xdlfUNLjUA86iOe/FP3gx7k="></canvas><br/>
+		<p>Google ssl (1024 bits)</p>
+		<canvas width="800" height="100" data-key="65RgZHwxSKIchWVQSWUgbBL0qbIJp8fVrsxxjZeEqo04mf4QHjeOn/XioMNQy8ZO3du6FfTX7TTSA9DQhSidJfRDUYfYUiLR0aHBy5/zAxegqylwsCQ4IFgmA+4TkzaHvhZW2/XvE10xPUUaoRusD6vKZZQeo2SENU4IsiX9WFU="></canvas><br/>
+		<p>Verisign ssl ca (2048 bits)</p>
+		<canvas width="800" height="100" data-key="ryQICCl6NZ5gDKrnSztO3Hy8PEUcuyvg/ikC+VcIo2SFFSf18a3IMYldIugqqqZCs4/4uVW3sbdLs/6PfgdX7O9D22ZiFWHPYA2k2N744MNiCD1UE+tJyllUhSblK48bn+v1oZHCM0nYQ2NqUkvSj+hwUU3RiWl7x3D2s9wSdNt7XUtW05a/FXehsPSiJfKvHJJnGOX0BgTvkLnkAOTdOrUZ/wK69Dzu4IvrN4vs9Nes8vbwPa/ddZEzGR0cQMt0JBkhk9kU/qwqUseP1QRJ5I1jR4g8aYPL/ke9K35PxZWuDp3U0UPAZ3PjFAh+5T+fc7gzCs9dPzSHloruU+glFQ=="></canvas><br/>
+		<p>Amazon ssl (2048 bits)</p>
+		<canvas width="800" height="100" data-key="vNgkRGq6kxN5PzGCP0bnqAu1tT/jkNdtM1KKr+dAp6cCSyEVyPccAA53Sb0VJJIrYadptKVc8evzL2JAxZP0unvUBZ5nr+sbiq7wgP0tA1iqoAZURZsD7yGjfOKkRYuYRnprdIzIgFrKFQtkkPczLgUhbRdYUoSf4xYz+Fy8wGl45oxGDS5pGo8LqvB5Mgo1K/OC0rXAA+DXpIGhjjybkdsxe5k09//DFKULbRwMTaLdfU5PfiN70jTXCeb2X2zOR7B+bDxvoUfzd0c5DZitDTEl7C4s+BmY5mIpuSWhrOH9Ag+g+AQFE1Y8n4fLG7oxTQX8xTQGAO7x5uwmtNgF0w=="></canvas><br/>
+
+		<script>
+			jQuery("canvas").each(function() { KeyVis.drawOn(this); });
+		</script>
+	</body>
+</html>
+
