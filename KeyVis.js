@@ -2,7 +2,7 @@
  * Creates a signature like visual representation of
  * a binary key/signature/fingerprint on an html5 canvas.
  *
- * ex: KeyVis.draw(canvas [, decoder]);
+ * KeyVis.draw(canvas [, decoder]);
  */
 var KeyVis = new function() {
 	// what function to use to decode the data-key into a binary string
